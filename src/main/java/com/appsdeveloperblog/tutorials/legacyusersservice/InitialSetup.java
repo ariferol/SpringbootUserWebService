@@ -25,11 +25,11 @@ public class InitialSetup {
     public void onApplicationEvent(ApplicationReadyEvent event) {
         UserEntity user = new UserEntity(
                 1L,
-                "qswe3mg84mfjtu",
-                "Sergey",
-                "Kargopolov",
-                "test2@test.com",
-                bCryptPasswordEncoder.encode("sergey"),
+                "924dea963d35",
+                "Arif",
+                "EROL",
+                "arif@arif.com",
+                bCryptPasswordEncoder.encode("ariftest"),
                 "",
                 false);
 

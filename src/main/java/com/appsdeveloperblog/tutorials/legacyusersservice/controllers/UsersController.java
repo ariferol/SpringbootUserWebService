@@ -31,6 +31,9 @@ public class UsersController {
     public VerifyPasswordResponse verifyUserPassword(@PathVariable("userName") String userName,
             @RequestBody String password) {
 
+        /*Bas ve sondaki mukerrer tirnaklari temizler*/
+        password = password.replaceAll("^\"|\"$", "");
+
         VerifyPasswordResponse returnValue = new VerifyPasswordResponse(false);
 
         UserRest user = usersService.getUserDetails(userName, password);
